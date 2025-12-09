@@ -16,7 +16,7 @@ createConnection({
 createQueue();
 
 const server = createServer({
-  port: process.env.PORT,
+  port: process.env.PORT || 3000,
   JSONLimit: '150mb',
   enableCors: true,
 });
